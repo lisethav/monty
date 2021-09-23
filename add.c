@@ -24,7 +24,7 @@ void add(stack_t **h, data_t *d)
 			d->line);
 		if (d)
 			free(d);
-		free_dlistint(*h);
+		free_list(*h);
 		exit(EXIT_FAILURE);
 	}
 }

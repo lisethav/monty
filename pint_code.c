@@ -16,7 +16,7 @@ void pint(stack_t **h, data_t *d)
 		dprintf(STDERR_FILENO, "L%u: can't pint, stack empty\n", d->line);
 		if (d)
 			free(d);
-		free_dlistint(*h);
+		free_list(*h);
 		exit(EXIT_FAILURE);
 	}
 }

@@ -14,7 +14,6 @@ void run_op(data_t *data, stack_t **head)
 		{"pop", pop},
 		{"swap", swap},
 		{"add", add},
-		{"nop", nop},
 		{NULL, NULL}
 	};
 	while (data->op && ops_f[i].opcode)

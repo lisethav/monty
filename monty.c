@@ -43,6 +43,6 @@ int main(int argc, char **argv)
 	fclose(data->fd);
 	if (data)
 		free(data);
-	free_dlistint(head);
+	free_list(head);
 	return (EXIT_SUCCESS);
 }

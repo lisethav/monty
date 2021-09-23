@@ -21,7 +21,7 @@ void parse(char *buffer, data_t *d, stack_t **h)
 			d->line, token);
 		if (d)
 			free(d);
-		free_dlistint(*h);
+		free_list(*h);
 		exit(EXIT_FAILURE);
 	}
 	if (d->op)

@@ -16,13 +16,13 @@ void pop(stack_t **h, data_t *d)
 			d->line);
 		if (d)
 			free(d);
-		free_dlistint(*h);
+		free_list(*h);
 		exit(EXIT_FAILURE);
 	}
 
 	if (!(*h)->next)
 	{
-		free_dlistint(*h);
+		free_list(*h);
 		*h = NULL;
 	}
 	else

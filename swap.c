@@ -3,19 +3,16 @@
  *swap - swaps the top two elements of the stack.
  *@h: pointer of struct
  *@d: package data
- *
  */
 void swap(stack_t **h, data_t *d)
 {
 	int swap;
-
 
 	if (*h && (*h)->next)
 	{
 		swap = (*h)->n;
 		(*h)->n = (*h)->next->n;
 		(*h)->next->n = swap;
-
 	}
 	else
 	{
@@ -25,7 +22,7 @@ void swap(stack_t **h, data_t *d)
 			d->line);
 		if (d)
 			free(d);
-		free_dlistint(*h);
+		free_list(*h);
 		exit(EXIT_FAILURE);
 	}
 }
